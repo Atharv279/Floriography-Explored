@@ -1,5 +1,5 @@
 import type { Flower, Occasion } from '@/types';
-import { Gift, Heart, Ribbon, Handshake, Sun, Sparkles } from 'lucide-react';
+import { Gift, Heart, Ribbon, Handshake, Sun, Sparkles, Sprout } from 'lucide-react';
 
 const flowers: Flower[] = [
   {
