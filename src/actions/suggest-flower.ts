@@ -4,6 +4,7 @@ import { flowerSuggestion } from '@/ai/flows/flower-suggestion';
 
 interface State {
   suggestions?: string | null;
+  reasoning?: string | null;
   error?: string | null;
 }
 
@@ -16,7 +17,7 @@ export async function suggestFlowerAction(prevState: State, formData: FormData):
 
   try {
     const result = await flowerSuggestion({ occasionOrSentiment });
-    return { suggestions: result.suggestions };
+    return { suggestions: result.suggestions, reasoning: result.reasoning };
   } catch (e) {
     console.error(e);
     return { error: 'Sorry, we couldn\'t find any suggestions. Please try again.' };

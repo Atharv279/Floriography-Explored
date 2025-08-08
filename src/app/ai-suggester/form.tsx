@@ -6,10 +6,11 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Lightbulb, Loader } from 'lucide-react';
+import { Lightbulb, Loader, Sparkles } from 'lucide-react';
 
 const initialState = {
   suggestions: null,
+  reasoning: null,
   error: null,
 };
 
@@ -60,6 +61,18 @@ export function AiSuggesterForm() {
           <AlertDescription>
             <div className="prose prose-sm dark:prose-invert">
               <p>{state.suggestions}</p>
+            </div>
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {state.reasoning && (
+        <Alert variant="default" className="mt-4 bg-secondary/50">
+          <Sparkles className="h-4 w-4" />
+          <AlertTitle>Why we suggest these</AlertTitle>
+          <AlertDescription>
+            <div className="prose prose-sm dark:prose-invert">
+              <p>{state.reasoning}</p>
             </div>
           </AlertDescription>
         </Alert>

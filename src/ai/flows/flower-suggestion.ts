@@ -22,6 +22,9 @@ const FlowerSuggestionOutputSchema = z.object({
   suggestions: z
     .string()
     .describe('A list of flower suggestions appropriate for the occasion or sentiment.'),
+  reasoning: z
+    .string()
+    .describe('The reasoning behind the suggestions provided.'),
 });
 export type FlowerSuggestionOutput = z.infer<typeof FlowerSuggestionOutputSchema>;
 
@@ -33,11 +36,12 @@ const prompt = ai.definePrompt({
   name: 'flowerSuggestionPrompt',
   input: {schema: FlowerSuggestionInputSchema},
   output: {schema: FlowerSuggestionOutputSchema},
-  prompt: `You are a floral expert. Given the occasion or sentiment, suggest appropriate flowers.
+  prompt: `You are a floral expert. Given the occasion or sentiment, suggest appropriate flowers and provide a reason for your suggestions.
 
 Occasion or Sentiment: {{{occasionOrSentiment}}}
 
-Suggestions:`,
+Suggestions:
+Reasoning:`,
 });
 
 const flowerSuggestionFlow = ai.defineFlow(
