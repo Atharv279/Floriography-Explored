@@ -1,6 +1,6 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useFormStatus } from 'react';
 import { suggestFlowerAction } from '@/actions/suggest-flower';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -24,7 +24,7 @@ function SubmitButton() {
 }
 
 export function AiSuggesterForm() {
-  const [state, formAction] = useFormState(suggestFlowerAction, initialState);
+  const [state, formAction] = useActionState(suggestFlowerAction, initialState);
 
   return (
     <div className="space-y-6">
