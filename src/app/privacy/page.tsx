@@ -1,3 +1,4 @@
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="container mx-auto px-4 py-12">
@@ -6,47 +7,63 @@ export default function PrivacyPolicyPage() {
         <p className="text-lg text-muted-foreground">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
         <p>
-          Welcome to Floriography Explored. Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+          Welcome to Floriography Explored! Your privacy is incredibly important to us. This policy is designed to explain how we handle your information in a way that is clear and straightforward. Our goal is to help you understand what information we collect, why we collect it, and how we keep it safe.
         </p>
 
-        <h2 className="font-headline">Collection of Your Information</h2>
+        <h2 className="font-headline">Our Philosophy on Privacy</h2>
         <p>
-          We may collect information about you in a variety of ways. The information we may collect on the Site includes:
+          We believe in privacy by design. That means we aim to collect as little personal information as possible while still providing you with a wonderful experience exploring the language of flowers.
         </p>
         
-        <h3 className="font-headline">Personal Data</h3>
+        <h2 className="font-headline">Information We Collect</h2>
         <p>
-          Personally identifiable information, such as your name, shipping address, email address, and telephone number, and demographic information, such as your age, gender, hometown, and interests, that you voluntarily give to us when you register with the Site or when you choose to participate in various activities related to the Site, such as online chat and message boards.
+          Our website is primarily for information and exploration. Here’s a simple breakdown of the data we might handle:
         </p>
         
-        <h3 className="font-headline">AI Suggester Data</h3>
+        <h3 className="font-headline">When You Contact Us</h3>
         <p>
-          Any text or information you enter into the AI Suggester tool may be processed by a third-party AI provider (such as Google Gemini) to generate suggestions. We do not store these inputs or associate them with your personal account. We advise against entering any sensitive personal information into the tool.
+          If you use our contact form, we will collect your name and email address. We only use this information to respond to your message. We won’t add you to any mailing lists or share your details with others.
         </p>
-
-        <h2 className="font-headline">Use of Your Information</h2>
+        
+        <h3 className="font-headline">When You Use Our AI Suggester</h3>
         <p>
-          Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Site to:
+          Our AI Flower Suggester is designed to be anonymous. The occasion or sentiment you enter is sent to our AI provider (like Google Gemini) to generate your flower suggestion. 
         </p>
         <ul>
-          <li>Create and manage your account.</li>
-          <li>Email you regarding your account or order.</li>
-          <li>Fulfill and manage purchases, orders, payments, and other transactions related to the Site.</li>
-          <li>Generate a personal profile about you to make future visits to the Site more personalized.</li>
+            <li>We do not store your prompts or the suggestions you receive.</li>
+            <li>We do not link this information to you in any way.</li>
+            <li><strong>Please do not enter any sensitive personal information</strong> (like names, addresses, or health details) into the suggester tool.</li>
         </ul>
+
+        <h2 className="font-headline">How We Use Your Information</h2>
+        <p>
+          To put it simply, we use the information you provide for the purpose you provided it:
+        </p>
+        <ul>
+          <li><strong>Contact Information:</strong> To reply to your questions and comments.</li>
+          <li><strong>AI Suggester Input:</strong> To provide you with a creative flower suggestion.</li>
+        </ul>
+        <p>
+          We do not use your information for advertising, and we do not sell your data to third parties. Ever.
+        </p>
 
         <h2 className="font-headline">Security of Your Information</h2>
         <p>
-          We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+          We take reasonable measures to protect the information you provide. Our site uses standard security protocols. However, please remember that no method of transmission over the Internet is 100% secure. While we strive to protect your information, we cannot guarantee its absolute security.
+        </p>
+
+        <h2 className="font-headline">Changes to This Policy</h2>
+        <p>
+            We may update this privacy policy from time to time. The "Last updated" date at the top of this page will always be current. We encourage you to review this page periodically to stay informed.
         </p>
 
         <h2 className="font-headline">Contact Us</h2>
         <p>
-          If you have questions or comments about this Privacy Policy, please contact us through the contact form on our website.
+          If you have any questions or concerns about this Privacy Policy, please don’t hesitate to reach out to us through our <a href="/contact">contact page</a>. We're happy to help.
         </p>
         
         <p className="text-sm text-muted-foreground mt-8">
-            Please note: This is a template privacy policy and is not legal advice. You should consult with a legal professional to ensure your privacy policy is compliant with all applicable laws and regulations.
+            Please note: This is a template privacy policy and is not legal advice. You should consult with a legal professional to ensure your privacy policy is compliant with all applicable laws and regulations for your specific use case.
         </p>
 
       </div>
