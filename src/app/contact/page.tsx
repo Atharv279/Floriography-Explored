@@ -18,7 +18,7 @@ export default function ContactPage() {
             <div className="p-8 rounded-lg bg-secondary/50 border border-border h-full flex flex-col">
               <h2 className="text-3xl font-headline text-foreground mb-4">Contact Information</h2>
               <p className="text-muted-foreground mb-8">
-                For direct inquiries, you can reach out to us via email. We strive to respond to all messages within 24-48 hours.
+                We read every message and love connecting with our community. Please feel free to send us your thoughts directly via email. We aim to respond within two business days.
               </p>
               <div className="space-y-6 mt-auto">
                 <div className="flex items-center gap-4">
