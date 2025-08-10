@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://floriography-explored.vercel.app//sitemap.xml
+Sitemap: https://floriography-explored.vercel.app/sitemap.xml
