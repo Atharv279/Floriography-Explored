@@ -29,7 +29,7 @@ export default function AboutUsPage() {
           </div>
           <div className="order-1 md:order-2">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/image/The Lost Art of Floriography.png"
               alt="Artistic display of various flowers"
               width={600}
               height={400}
@@ -42,7 +42,7 @@ export default function AboutUsPage() {
         <section className="mt-16 md:mt-24 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>
              <Image
-              src="https://placehold.co/600x400.png"
+              src="/image/Innovation Meets Intuition related to flowers.png"
               alt="Abstract representation of AI and nature"
               width={600}
               height={400}
