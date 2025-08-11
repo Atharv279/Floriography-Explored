@@ -62,10 +62,6 @@ export default function PrivacyPolicyPage() {
           If you have any questions or concerns about this Privacy Policy, please don’t hesitate to reach out to us through our <a href="/contact">contact page</a>. We're happy to help.
         </p>
         
-        <p className="text-sm text-muted-foreground mt-8">
-            Please note: This is a template privacy policy and is not legal advice. You should consult with a legal professional to ensure your privacy policy is compliant with all applicable laws and regulations for your specific use case.
-        </p>
-
       </div>
     </div>
   );
